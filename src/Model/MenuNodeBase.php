@@ -139,7 +139,7 @@ class MenuNodeBase implements NodeInterface
      */
     protected $routeAbsolute = false;
 
-    public function __construct($name = null)
+    public function __construct($name = '')
     {
         $this->name = $name;
         $this->children = new ArrayCollection();
@@ -184,7 +184,7 @@ class MenuNodeBase implements NodeInterface
      *
      * @return MenuNodeBase - this instance
      */
-    public function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
 
